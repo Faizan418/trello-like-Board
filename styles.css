@@ -1,39 +1,53 @@
 body{
-    border: 1px solid black;
+    /* border: 1px solid rgb(231, 12, 12); */
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100%;
+    margin: 0;
+    padding: 20px 5px;
+    /* background: #f3ff47; */
+    background-image: url(./Seventeen.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* height: 100vh; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .containar{
     display: flex;
+    /* margin-top: 70px; */
+    /* border: 1px solid rgb(148, 75, 75); */
     flex-direction: column;
     justify-content: center;
     text-align: center;
     align-items: center;
-    width: 500px;
     margin: 10px;
-    padding: 20px;
+    padding: 30px 10px;
     border-radius: 5px;
-    background-color: white;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    background-color: rgba(241, 241, 241, 0.041);
+    backdrop-filter: blur(8px);
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.692);
 }
 .add-board{
-    background-color: rgb(221, 232, 236);
+    background-color: rgba(7, 7, 7, 0.185);
     color: white;
     padding: 10px;
     width: 400px;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    border: 1px solid black;
+    border: 1px solid rgb(85, 85, 85);
     justify-content: center;
     display: flex;
+    margin-bottom: 40px;
 }
 .add-board input{
     padding: 5px;
     width: 80%;
     border: none;
     outline: none;
+    border-radius: 4px;
 }
 .add-board button {
     background-color: rgb(255, 153, 0);
@@ -44,3 +58,130 @@ body{
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
+.add-board button:hover{
+    background-color: rgb(255, 179, 0);
+}
+@media(max-width: 470px){
+    .add-board{
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .add-board input{
+        width: 95%;
+        height: 40px;
+        border-radius: 6px;
+    }
+    .add-board button{
+        width: 140px;
+        height: 40px;
+    }
+    .add-board button:hover{
+        width: 95%;
+        transition: ease-in 0.4s;
+        transition: ease-out 0.4s;
+    }
+}
+@media(max-width: 450px){
+    .add-board{
+        width: 330px;
+    }
+
+}
+@media(max-width: 380px){
+    .add-board{
+        width: 280px;
+    }
+
+}
+.boards-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* border: 1px solid black; */
+}
+  
+.board {
+    width: 250px;
+    background-color: #ffffff62;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .board h3 {
+    margin-top: 0;
+    font-size: 20px;
+  }
+  
+  .add-list {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .add-list input {
+    padding: 8px;
+    margin-right: 10px;
+    border-radius: 4px;
+    outline: none;
+    width: 93%;
+    border: 1px solid rgb(138, 138, 138);
+  }
+  
+  .add-list button {
+    margin-top: 10px;
+    padding: 7px;
+    background-color: #0079bf;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    width: 80px;
+  }
+  
+  .add-list button:hover {
+    background-color: #005f8a;
+    width: 70%;
+    transition: ease-in 0.3s;
+  }
+  
+  .list {
+    background-color: rgba(0, 0, 0, 0.384);
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
+  }
+  .cardInput{
+    margin-top: 10px;
+    border-radius: 3px;
+    height: 25px;
+    border: none;
+    outline: none;
+  }
+  .addCardButton{
+    background: greenyellow;
+    margin-top: 5px;
+    padding: 5px 6px;
+    border-radius: 3px;
+    width: 80px;
+    outline: none;
+    border: none;
+    color: whitesmoke;
+  }
+  .addCardButton:hover{
+    width: 70%;
+    transition: ease-in 0.3s;
+  }
+  .card {
+    margin-top: 10px;
+    background-color: #ff4a4a4d;
+    padding: 10px;
+    border-radius: 3px;
+    margin-bottom: 5px;
+  }
+  
