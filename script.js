@@ -3,7 +3,16 @@ function createBoard() {
     const boardName = document.getElementById("boardName").value;
     
     if (boardName.trim() === "") {
-      alert("Please enter a board name!");
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Pleace enter a board name!",
+
+        // Close button
+        confirmButtonColor: "blue",
+        confirmButtonText: "Okay"
+        
+      });
       return;
     }
   
@@ -31,7 +40,17 @@ function createBoard() {
       const listName = listInput.value;
   
       if (listName.trim() === "") {
-        alert("Please enter a list name!");
+        // alert("Please enter a list name!");
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: "Please enter a list name!",
+  
+          // Close button
+          confirmButtonColor: "blue",
+          confirmButtonText: "Okay"
+          
+        });
         return;
       }
   
@@ -71,13 +90,23 @@ function createBoard() {
       cardInput.placeholder = "Enter card name";
       cardInput.classList.add("cardInput")
       const addCardButton = document.createElement("button");
-      addCardButton.textContent = "Add Card";
+      addCardButton.textContent = "Add Cart";
       addCardButton.classList.add("addCardButton")
   
       addCardButton.addEventListener("click", function() {
         const cardName = cardInput.value;
         if (cardName.trim() === "") {
-          alert("Please enter a card name!");
+          // alert("Please enter a card name!");
+          Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Please enter a cart name!",
+    
+            // Close button
+            confirmButtonColor: "blue",
+            confirmButtonText: "Okay"
+            
+          });
           return;
         }
   
