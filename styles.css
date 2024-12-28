@@ -1,25 +1,21 @@
 body{
-    /* border: 1px solid rgb(231, 12, 12); */
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    overflow: scroll;
-    scroll-behavior: smooth;
     margin: 0;
     padding: 20px 5px;
-    /* background: #f3ff47; */
     background-image: url(./Seventeen.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    /* height: 100vh; */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.main_containar{
+  height: 100%;
+  width: auto;
 }
 .containar{
     display: flex;
-    /* margin-top: 70px; */
-    /* border: 1px solid rgb(148, 75, 75); */
     flex-direction: column;
     justify-content: center;
     text-align: center;
@@ -103,7 +99,8 @@ body{
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-    /* border: 1px solid black; */
+    border: 1px solid rgb(73, 73, 73);
+
 }
   
 .board {
